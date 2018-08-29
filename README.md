@@ -32,7 +32,7 @@ This library provides an async image downloader with cache support. For convenie
 ## Supported Image Formats
 
 - Image formats supported by UIImage (JPEG, PNG, ...), including GIF
-- WebP format, including animated WebP (use the `WebP` subspec)
+- WebP format, including animated WebP (use the [SDWebImageWebPCoder](https://github.com/SDWebImage/SDWebImageWebPCoder) project)
 
 ## Requirements
 
@@ -126,11 +126,11 @@ use_frameworks!
 
 #### Subspecs
 
-There are 3 subspecs available now: `Core`, `MapKit` and `WebP` (this means you can install only some of the SDWebImage modules. By default, you get just `Core`, so if you need `WebP`, you need to specify it). 
+There are 2 subspecs available now: `Core` and `MapKit` (this means you can install only some of the SDWebImage modules. By default, you get just `Core`, so if you need `MapKit`, you need to specify it). 
 
 Podfile example:
 ```
-pod 'SDWebImage/WebP'
+pod 'SDWebImage/MapKit'
 ```
 
 ### Installation with Carthage (iOS 8+)

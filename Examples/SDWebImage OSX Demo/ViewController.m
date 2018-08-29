@@ -34,7 +34,7 @@
     [self.imageView3 sd_setImageWithURL:[NSURL URLWithString:@"https://raw.githubusercontent.com/liyong03/YLGIFImage/master/YLGIFImageDemo/YLGIFImageDemo/joy.gif"]];
     self.imageView4.wantsLayer = YES;
     self.imageView4.sd_imageTransition = SDWebImageTransition.fadeTransition;
-    [self.imageView4 sd_setImageWithURL:[NSURL URLWithString:@"http://littlesvr.ca/apng/images/SteamEngine.webp"] placeholderImage:nil options:SDWebImageForceTransition];
+    [self.imageView4 sd_setImageWithURL:[NSURL URLWithString:@"http://via.placeholder.com/200x200.png"] placeholderImage:nil options:SDWebImageForceTransition];
     
     self.clearCacheButton.target = self;
     self.clearCacheButton.action = @selector(clearCacheButtonClicked:);
