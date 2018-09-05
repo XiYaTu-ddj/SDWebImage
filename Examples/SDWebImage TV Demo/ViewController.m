@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <SDWebImage/SDWebImage.h>
+#import <SDWebImageWebPCoder/SDImageWebPCoder.h>
 
 @interface ViewController ()
 
@@ -24,11 +25,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[SDImageCodersManager sharedManager] addCoder:[SDImageWebPCoder sharedCoder]];
     
     [self.imageView1 sd_setImageWithURL:[NSURL URLWithString:@"http://s3.amazonaws.com/fast-image-cache/demo-images/FICDDemoImage001.jpg"]];
-    [self.imageView2 sd_setImageWithURL:[NSURL URLWithString:@"https://upload.wikimedia.org/wikipedia/commons/1/14/Animated_PNG_example_bouncing_beach_ball.png"]];
+    [self.imageView2 sd_setImageWithURL:[NSURL URLWithString:@"http://www.ioncannon.net/wp-content/uploads/2011/06/test2.webp"]];
     [self.imageView3 sd_setImageWithURL:[NSURL URLWithString:@"https://raw.githubusercontent.com/liyong03/YLGIFImage/master/YLGIFImageDemo/YLGIFImageDemo/joy.gif"]];
-    [self.imageView4 sd_setImageWithURL:[NSURL URLWithString:@"http://via.placeholder.com/200x200.png"]];
+    [self.imageView4 sd_setImageWithURL:[NSURL URLWithString:@"http://littlesvr.ca/apng/images/SteamEngine.webp"]];
 }
 
 - (void)didReceiveMemoryWarning {
