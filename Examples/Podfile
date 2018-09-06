@@ -20,6 +20,6 @@ target 'SDWebImage TV Demo' do
   platform :tvos, '9.2'
 end
 
-target 'SDWebImage Watch Demo' do
+target 'SDWebImage Watch Demo Extension' do
   platform :watchos, '2.0'
 end
